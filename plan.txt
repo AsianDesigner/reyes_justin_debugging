@@ -1,0 +1,28 @@
+Bug #1
+Looking at it initially, I knew that I had to somehow find a code that would retrieve information that
+the drop zone was occupied. 
+
+Reading the debugging strategies gave me a start, I was able to learn about the return function
+which I was hinted to google which could essentially "exit" the function. After that it was a matter
+of figuring out an if code that could sense the child inside the parent. 
+I asked ChatGPT for a code that could detect children inside a parent and it gave back the 
+childEl.length > 0 code.
+Then I just slotted in the if and this statement as per the debugging strategies hint and added the
+return function to break the function if it detected there was a piece already slotted in. Then it
+was just a matter of using my last line on console logging it to show that it actually detected it.
+
+Bug #2
+Looking at the 2nd bug I can see that I have a problem as I'll need to essentially write a function
+for two things, clearing the board upon selecting a new board and clearing the board upon clicking
+the reset button.
+
+I followed the tips given in the debugging strategies again, already had the if statement to check 
+the puzzleBoard for any children inside of it from bug fix 1.
+I then asked chatGPT to give me a forEach loop that could return the pieces to the dragZone container
+if detected in the puzzleBoard. It gave back exactly what I needed and I just slotted in the necessary
+parameters and the console log to confirm that it actually worked on click.
+
+At this point I went thru hell to try and get the reset function to work. Eventually I landed on
+placing the reset button into a div of its own and adding the ID of the resetBut into the buttons 
+querySelector rather than making it its own selector. Then adding an event listener to monitor when 
+its clicked. It worked so Im done

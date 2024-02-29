@@ -1,6 +1,7 @@
 # Drag and Drop Reference
 
-TODO: Write a project description
+TODO: Understand the bugs present in the js, make a plan to tackle it and research independent solutions
+to fix it.
 
 ## Contributing
 
@@ -12,7 +13,7 @@ TODO: Write a project description
 
 ## Credits
 
-TODO: Write credits
+Justin Reyes
 
 ## License
 MIT
